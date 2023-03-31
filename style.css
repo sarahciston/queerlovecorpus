@@ -1,6 +1,7 @@
 :root {
   color: slategrey;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 2; */
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -16,7 +17,8 @@ body {
   /* margin: 0 auto; */
   /* padding: 2rem; */
   /* text-align: center; */
-  display: flex;
+  /* display: flex */
+  display: flexbox;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -25,7 +27,7 @@ body {
 
 a {
   font-weight: 500;
-  color: darkgray;
+  color: rgb(73, 73, 73);
   text-decoration: inherit;
 }
 a:hover {
@@ -33,9 +35,10 @@ a:hover {
 }
 
 .databox {
-  border-color: gray;
-  border-width: 1px;
-  border-style: dashed;
+  padding: 0 2rem;
+  /* border-color: gray; */
+  /* border-width: 1px; */
+  /* border-style: dashed; */
 }
 
 .dark {
