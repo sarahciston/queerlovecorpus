@@ -32,6 +32,11 @@ a:hover {
   color: darkslategrey;
 }
 
+.databox {
+  border-color: gray;
+  border-width: 1px;
+  border-style: dashed;
+}
 
 .dark {
   color: black;
