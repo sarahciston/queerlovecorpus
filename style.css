@@ -76,10 +76,10 @@ a:hover {
 } */
 
 .proseplay-plaintext, .proseplay-choice {
-  transition: opacity 0.33s ease-in-out !important;
+  transition: opacity 0.4s ease-in-out !important;
 }
 .proseplay-window {
-  transition: width 0.33s ease-in-out !important;
+  transition: width 0.4s ease-in-out !important;
 }
 /* .proseplay-list, .proseplay-has-transition {
   transition: top 0.33s ease-in-out, left 0.33s ease-in-out !important;

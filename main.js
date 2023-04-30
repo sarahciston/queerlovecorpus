@@ -49,31 +49,30 @@ function swapRandom(pp){
     // console.log(randomPP.el)
     // let element = document.body.querySelectorAll(".proseplay-current")
     
-    // slide to next item -- could make this a randomizer instead but eh?
-    randomPP.choices.forEach((list, choice)=>{
-        let current = randomPP.currentIndexes[choice]
-        let next = current+1
-        let len = list.length
+    let randomPick = randomPP.generate()
+    // randomPick.target.classList.add("proseplay-hover");
 
-        // check if reached end of list
-        if (next > len-1){
-            console.log("end")
-            next = 0
-        }
-        // RANDOM FROM WHOLE LIST
-        randomPP.generate()
+    // randomPP.choices.forEach((list, choice)=>{
+    //     let current = randomPP.currentIndexes[choice]
+    //     let next = current+1
+    //     let len = list.length
 
-        // // // let randomWord = list.random()
-        // let rWindex = Math.floor((Math.random()*list.length))
-        // // hoverStyle()
-        // randomPP.slideWindow(choice,rWindex)
-        // randomPP.slideWindow(choice, randomPP.random)
-        // unhoverStyle(randomPP.el.firstChild)
-        
+    //     // check if reached end of list
+    //     if (next > len-1){
+    //         console.log("end")
+    //         next = 0
+    //     }
+    //     // NEXT IN LIST
+    //     randomPP.slideWindow(choice,next)
 
-        // NEXT IN LIST
-        // randomPP.slideWindow(choice,next)
-    })
+    //     // RANDOM FROM WHOLE LIST
+    //     // // // let randomWord = list.random()
+    //     // let rWindex = Math.floor((Math.random()*list.length))
+    //     // // hoverStyle()
+    //     // randomPP.slideWindow(choice,rWindex)
+    //     // randomPP.slideWindow(choice, randomPP.random)
+    //     // unhoverStyle(randomPP.el.firstChild)
+    // })
 }
 
 function turnLight() {
