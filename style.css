@@ -1,9 +1,12 @@
 :root {
-  color: slategrey;
+  /* color: slategrey; */
+  color: #796e79;
+  /* color: #5e455c; */
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 2; */
-  font-weight: 400;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,41 +16,67 @@
 }
 
 body {
-  margin: 2rem;
+  margin: 1.8rem;
   /* margin: 0 auto; */
   /* padding: 2rem; */
-  /* text-align: center; */
-  /* display: flex */
-  display: flexbox;
-  place-items: center;
+  /* text-align: left; */
+  display: flex;
+  justify-content: space-evenly;
+  align-content: left;
+  /* flex-direction: column; */
+  flex-flow: column wrap;
+  /* display: flexbox; */
+  /* place-items: left; */
   min-width: 320px;
   min-height: 100vh;
-  max-width: 1280px;
+  max-width: 1304px;
+  max-height: 984px;
 }
 
 a {
   font-weight: 500;
-  color: rgb(73, 73, 73);
+  /* color: rgb(73, 73, 73); */
+  /* color: #866f85; */
   text-decoration: inherit;
 }
 a:hover {
-  color: darkslategrey;
+  /* color: darkslategrey; */
+  color: #866f85;
 }
 
 .databox {
-  padding: 0 2rem;
+  padding: 2rem;
+  /* place-items: left;
+  align-items: left; */
+  /* justify-content: left; */
+  /* flex-basis: 20%; */
   /* border-color: gray; */
   /* border-width: 1px; */
   /* border-style: dashed; */
 }
 
+/* .proseplay-plaintext {
+  text-align: center;
+} */
+
 .dark {
-  color: black;
+  /* color: black; */
+  /* color: #866f85; */
+  color: #55345d;
 }
 
 .light {
-  color: lightgrey;
+  /* color: lightgrey; */
+  /* color: #e7e2e7; */
+  color: #aa9aaa;
 }
+
+/* .grid {
+
+} */
+
+
+
 
 
 
