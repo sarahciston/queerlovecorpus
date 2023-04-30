@@ -39,9 +39,15 @@ function swapAll(pp){
     })
 }
 
+// function swapR(pp){
+//     pp.random
+// }
+
 function swapRandom(pp){
     // select random entry
     let randomPP = pp.random()
+    // console.log(randomPP.el)
+    // let element = document.body.querySelectorAll(".proseplay-current")
     
     // slide to next item -- could make this a randomizer instead but eh?
     randomPP.choices.forEach((list, choice)=>{
@@ -55,9 +61,15 @@ function swapRandom(pp){
             next = 0
         }
         // RANDOM FROM WHOLE LIST
+        randomPP.generate()
+
         // // // let randomWord = list.random()
-        let rWindex = Math.floor((Math.random()*list.length))
-        randomPP.slideWindow(choice,rWindex)
+        // let rWindex = Math.floor((Math.random()*list.length))
+        // // hoverStyle()
+        // randomPP.slideWindow(choice,rWindex)
+        // randomPP.slideWindow(choice, randomPP.random)
+        // unhoverStyle(randomPP.el.firstChild)
+        
 
         // NEXT IN LIST
         // randomPP.slideWindow(choice,next)
@@ -74,6 +86,18 @@ function turnDark() {
     document.body.classList.add("dark");
 }
 
+function hoverStyle() {
+    let element = document.body.querySelectorAll(".proseplay-current")
+    // console.log(element)
+    // element.classList.add("proseplay-has-hover")
+    // document.body.classList.add("proseplay-hover")
+}
+
+function unhoverStyle(pp) {
+    pp.classList.remove("proseplay-has-hover")
+    // document.body.classList.remove("proseplay-hover")
+}
+
 function main(){
     // docs.length
     let ppList = []
@@ -86,13 +110,16 @@ function main(){
 
         pp.setFunction("turnLight", turnLight);
         pp.setFunction("turnDark", turnDark);
+        // pp.setFunction("hover", hoverStyle)
 
         // let timer = setInterval(function() {swapAll(pp)}, 5000)
         ppList.push(pp)
+        // let timer = setInterval(pp.random, 2000)
         return ppList
     })
     // console.log(ppList)
     let timer = setInterval(function() {swapRandom(ppList)}, 2000)
+    
 
 }
 
