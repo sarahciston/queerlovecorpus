@@ -129,8 +129,6 @@ function main(){
     // const urlSearch = window.location.search
     // console.log(urlPath, urlSearch)
     // // var docs = urlPath
-
-
     // setParam().then((docs)=>{
     
         docs.forEach((count, i) => {
