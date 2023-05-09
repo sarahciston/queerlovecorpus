@@ -6,7 +6,6 @@
 ONE POSTERS DATA
 */
 
-
 let colabSimsOne = {
     bisexual: `bisexual (is like) (rights|liberation|news|civil|campaign|black|fund|organizations|freedom|week|interest|movement|democratic|guide|openly|lesbian/gay|national|writers|lambda|lesbians|metropolitan|men|benefit|awareness|violence|toward|community|human|center,|washington|new|issues|jewish|forum|rodeo|workshops|marching|celebration|students|festival|caucus|pride|independent|proudly|league|business|law|health,|massachusetts|socialist)`,
     transgender: `transgender (is like) (music|comedy|premiere|musical|times|inc.|lesbian,|director|hosted|central|drug|president|houston|by|annual|third|aid|cultural|family|costume|kearns|gays|assoc.|seattle|s.f.|weekend|cedar|history|dance|video|near|queer|international|interpretation|arts|90|club|past|by:|thanks|university|author,|castro|united|union|college|place|performance|political|cast)`,
@@ -16,7 +15,6 @@ let colabSimsOne = {
 // bisexual: `bisexual (lesbian|liberation|visibility|gay|pride|community|rights|black|week|corps|partnership|services|twirling|association|freedom|national|festival|joint|pride|week|rodeo|awareness|marching|cand|literary|task|convention|education|band|resource|americans|fifth|international|a|washington|\new|conference|rodeo|baltimore|annual|presents|1985|film|august|orleans|celebration|force|benefit|experimental|produced)`
     // pansexual: `pansexual (8:|12:30|rubbers|evenings|hygiene|11:00|1:30|artscenter|ebacabi|6:00|00|2:00|parasites|personal/environmental|maximum|am_|saturdays|barber;|'87|curtain|1-7|fold|not.|(speakers|1:00|2:30|lunch-bring|speech,"text|9:30|hat|high|cowboy|dancing|90s:|iq|7300|12:00|doin|kissing|romance,|4:00|a.m.|demonstration,|menace|is|pm|p.m.|spor)`,
     // pride:`pride (community|services|task|alliance|association|rodeo|convention|mens|saturday,|national|festival|annual|celebration|advisory|education|force|fifth|presents|3rd|freedom|city|health|washington|lesbian/gay|democratic|gay|experimental|\new|produced|chorus|rights|week|liberation|lesbian|gay|mens|competition|stonewall|benefit|bisexual|l.a.|a|sacramento|joint|partnership|awareness|conference|commission|black|york)`,
-
 
 let OneSims = {
     bisexual: `queer bisexual is like (lesbian|liberation|task|pride|advisory|reno|community|rights|rodeo|gay|leadership|august|visibility|association|services|freedom|national|alliance|week|orleans|festival|fifth|annual|americans|celebration|washington|mens|new|lesbians|partnership|force|education|saturday|pioneer|international|bands|party|lesbian/gay|center|resource|presents|bartenders|l.a.|sunshine|ball|convention|a|intolerance|band|gay)`,
