@@ -111,5 +111,5 @@ let goodbye = `(d|e|f)`
 
 export let testTexts = [hello, goodbye]
 // export let OpenWebTexts = [OpenWebTextSims.pleasure, OpenWebTextSims.bisexual, OpenWebTextSims.transgender, OpenWebTextSims.queer, OpenWebTextSims.dyke]
-export let OpenWebTexts = [OpenWebTextSims.pleasure, OpenWebTextSims.bisexual, OpenWebTextSims.transgender, OpenWebTextSims.queer, OpenWebTextSims.dyke]
-export let OneTexts = [OneSims.pleasure, OneSims.bisexual, OneSims.transgender, OneSims.queer, OneSims.dyke]
+export let gpt = [OpenWebTextSims.pleasure, OpenWebTextSims.bisexual, OpenWebTextSims.transgender, OpenWebTextSims.queer, OpenWebTextSims.dyke]
+export let queer = [OneSims.pleasure, OneSims.bisexual, OneSims.transgender, OneSims.queer, OneSims.dyke]

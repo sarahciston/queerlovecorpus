@@ -1,8 +1,20 @@
 import './style.css'
 import { ProsePlay} from "proseplay"
-import { OpenWebTexts, OneTexts } from './results.js'
+import { gpt, queer } from './results.js'
 
-let docs = OpenWebTexts
+
+//this is heavyhanded but it works
+var docs
+const app = document.getElementById("app")
+const queryClass = app.classList[0]
+console.log(app, queryClass)
+
+// let docs = OpenWebTexts // OneTexts
+if (queryClass == "queer"){
+    docs = queer
+} else {
+    docs = gpt
+}
 
 function fetchIt(){
     pass
@@ -97,29 +109,59 @@ function unhoverStyle(pp) {
     // document.body.classList.remove("proseplay-hover")
 }
 
+
+function setParam(){
+    const urlPath = window.location.pathname
+    const urlSearch = window.location.search
+    console.log(urlPath, urlSearch)
+    var docs = urlSearch
+    return docs
+}
+
+
 function main(){
-    // docs.length
     let ppList = []
+    // window.addEventListener('content-document-global-created', setParam)
+    // async window.addEventListener('DOMContentLoaded', setParam)
+    // document.addEventListener('loadstart', setParam)
+    // window.addEventListener('onloadstart', setParam)
+    // const urlPath = window.location.pathname
+    // const urlSearch = window.location.search
+    // console.log(urlPath, urlSearch)
+    // // var docs = urlPath
+
+
+    // setParam().then((docs)=>{
     
-    docs.forEach((count, i) => {
-        let pp = makePP()
+        docs.forEach((count, i) => {
+            let pp = makePP()
 
-        pp.parse(docs[i])
-        // pp.parse(count)
+            pp.parse(docs[i])
+            // pp.parse(count)
 
-        pp.setFunction("turnLight", turnLight);
-        pp.setFunction("turnDark", turnDark);
-        // pp.setFunction("hover", hoverStyle)
+            pp.setFunction("turnLight", turnLight);
+            pp.setFunction("turnDark", turnDark);
+            // pp.setFunction("hover", hoverStyle)
 
-        // let timer = setInterval(function() {swapAll(pp)}, 5000)
-        ppList.push(pp)
-        // let timer = setInterval(pp.random, 2000)
-        return ppList
-    })
-    // console.log(ppList)
-    let timer = setInterval(function() {swapRandom(ppList)}, 2000)
+            // let timer = setInterval(function() {swapAll(pp)}, 5000)
+            ppList.push(pp)
+            // let timer = setInterval(pp.random, 2000)
+            return ppList
+        })
+        // console.log(ppList)
+        let timer = setInterval(function() {swapRandom(ppList)}, 2000)
     
+    // }).catch((err)=>(console.log(err)))
 
 }
 
 main()
+
+
+// document.addEventListener('DOMContentLoaded', function(){
+//     const docs = window.location.pathname
+//     console.log(docs)
+//     return docs
+// }).then((docs)=>{
+//     main()
+// })
