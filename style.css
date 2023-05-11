@@ -4,7 +4,7 @@
   /* color: #5e455c; */
   /* font-family: 'Courier New', Courier, monospace; */
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 2em;
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 2; */
   font-weight: 600;
@@ -17,9 +17,9 @@
 }
 
 body {
-  margin: 1.8rem;
+  margin: 1.5rem;
   /* margin: 0 auto; */
-  /* padding: 2rem; */
+  /*padding: 2rem; 
   /* text-align: left; */
   display: flex;
   justify-content: space-evenly;
@@ -46,7 +46,7 @@ a:hover {
 }
 
 .databox {
-  padding: 2rem;
+  padding: 0rem 0rem 8rem 5rem;
   /* place-items: left;
   align-items: left; */
   /* justify-content: left; */
@@ -79,6 +79,10 @@ a:hover {
 .proseplay-plaintext, .proseplay-choice {
   transition: opacity 0.4s ease-in-out !important;
 }
+/*
+.proseplay-plaintext {
+  padding: 0rem 0rem 0rem 0rem;
+}*/
 .proseplay-window {
   transition: width 0.4s ease-in-out !important;
 }
