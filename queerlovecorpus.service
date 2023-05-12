@@ -1,0 +1,24 @@
+# this file needs to go under /lib/systemd/system/<name-of-app>.service
+# there's some systemctl daemon-reload command to reload all units (i forget)
+# also need to 1) systemctl enable <name> 2) systemctl start <name>
+
+# && firefox --kiosk http://localhost:5173/queer.html
+
+[Unit]
+Description=queerlovecorpus
+Requires=network.target
+
+[Service]
+Type=simple
+# EnvironmentFile=/path/to/env/file
+# this needs to be the root of the git project probably
+WorkingDirectory=/home/thatbee/Code/queerlovecorpus
+# pick a different start command, but this is probably it
+ExecStart=node run dev 
+Restart=always
+# not smart to run as root but will definitely work
+User=root
+# PermissionsStartOnly=true
+
+[Install]
+WantedBy=multi-user.target

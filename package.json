@@ -12,6 +12,7 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
+    "cjs": "^0.0.11",
     "proseplay": "^1.1.1"
   }
 }
