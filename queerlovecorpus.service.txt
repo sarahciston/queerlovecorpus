@@ -1,0 +1,22 @@
+# this file needs to go under /lib/system/systemd/<name-of-app>.service
+# there's some systemd command to reload all units (i forget)
+# also need to 1) systemd enable <name> 2) systemd start <name>
+
+[Unit]
+Description=my cool node app thing idk
+Requires=network.target
+
+[Service]
+Typse=simple
+# EnvironmentFile=/path/to/env/file
+# this needs to be the root of the git project probably
+WorkingDirectory=/path/to/where/your/code/is
+# pick a different start command, but this is probably it
+ExecStart=node main.js
+Restart=always
+# not smart to run as root but will definitely work
+User=root
+# PermissionsStartOnly=true
+
+[Install]
+WantedBy=multi-user.target
