@@ -3,6 +3,12 @@
 # also need to 1) systemctl enable <name> 2) systemctl start <name>
 
 # && firefox --kiosk http://localhost:5173/queer.html
+# Mac direct launch  # /Applications/Firefox\ Nightly.app/Contents/MacOS/firefox --kiosk 
+# no URL
+
+# things to try, fixed npm err in command, change node version to 15.11 or 16.20, run from dist with http-server, run from dist with node server.cjs
+# /dist/ `node server.cjs && firefox --kiosk`
+
 
 [Unit]
 Description=queerlovecorpus
@@ -14,7 +20,8 @@ Type=simple
 # this needs to be the root of the git project probably
 WorkingDirectory=/home/thatbee/Code/queerlovecorpus
 # pick a different start command, but this is probably it
-ExecStart=node run dev 
+ExecStart=npm run dev 
+# `npm run dev && firefox --kiosk` 
 Restart=always
 # not smart to run as root but will definitely work
 User=root
