@@ -1,0 +1,13 @@
+[Unit]
+Description=queerlovecorpus
+Requires=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/thatbee/Code/queerlovecorpus
+ExecStart=npm run dev 
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
