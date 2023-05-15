@@ -6,8 +6,9 @@
 # Mac direct launch  # /Applications/Firefox\ Nightly.app/Contents/MacOS/firefox --kiosk 
 # no URL
 
-# things to try, fixed npm err in command, change node version to 15.11 or 16.20, run from dist with http-server, run from dist with node server.cjs
+# things to try, fixed npm err in command (worked!!), change node version to 15.11 or 16.20, run from dist with http-server, run from dist with node server.cjs
 # /dist/ `node server.cjs && firefox --kiosk`
+# fixed kiosk with start up applications instead
 
 
 [Unit]
@@ -21,7 +22,6 @@ Type=simple
 WorkingDirectory=/home/thatbee/Code/queerlovecorpus
 # pick a different start command, but this is probably it
 ExecStart=npm run dev 
-# `npm run dev && firefox --kiosk` 
 Restart=always
 # not smart to run as root but will definitely work
 User=root
