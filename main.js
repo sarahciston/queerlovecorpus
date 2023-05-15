@@ -61,30 +61,30 @@ function swapRandom(pp){
     // console.log(randomPP.el)
     // let element = document.body.querySelectorAll(".proseplay-current")
     
-    let randomPick = randomPP.generate()
+    ////////let randomPick = randomPP.generate()  //did this come from KY's library but i can't find it any longer
     // randomPick.target.classList.add("proseplay-hover");
 
-    // randomPP.choices.forEach((list, choice)=>{
-    //     let current = randomPP.currentIndexes[choice]
-    //     let next = current+1
-    //     let len = list.length
+     randomPP.choices.forEach((list, choice)=>{
+         let current = randomPP.currentIndexes[choice]
+         let next = current+1
+         let len = list.length
 
-    //     // check if reached end of list
-    //     if (next > len-1){
-    //         console.log("end")
-    //         next = 0
-    //     }
-    //     // NEXT IN LIST
-    //     randomPP.slideWindow(choice,next)
+         // check if reached end of list
+         if (next > len-1){
+             console.log("end")
+             next = 0
+         }
+         // NEXT IN LIST
+         randomPP.slideWindow(choice,next)
 
-    //     // RANDOM FROM WHOLE LIST
-    //     // // // let randomWord = list.random()
-    //     // let rWindex = Math.floor((Math.random()*list.length))
-    //     // // hoverStyle()
-    //     // randomPP.slideWindow(choice,rWindex)
-    //     // randomPP.slideWindow(choice, randomPP.random)
-    //     // unhoverStyle(randomPP.el.firstChild)
-    // })
+         // RANDOM FROM WHOLE LIST
+         // // // let randomWord = list.random()
+         // let rWindex = Math.floor((Math.random()*list.length))
+         // // hoverStyle()
+         // randomPP.slideWindow(choice,rWindex)
+         // randomPP.slideWindow(choice, randomPP.random)
+         // unhoverStyle(randomPP.el.firstChild)
+     })
 }
 
 function turnLight() {
